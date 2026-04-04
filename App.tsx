@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
-import Skills from './components/Skills';
+import Skills, { Certifications, Publications } from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { profileData } from './data/portfolioData';
@@ -13,13 +13,14 @@ const navLinks = [
   { name: 'Projects', href: '#projects' },
   { name: 'Experience', href: '#experience' },
   { name: 'Skills', href: '#skills' },
+  { name: 'Certifications', href: '#certifications' },
+  { name: 'Publications', href: '#publications' },
   { name: 'Contact', href: '#contact' },
 ];
 
 const TYPING_ROLES = [
   'Full Stack Engineer',
   'LLM Systems Builder',
-  'Cloud Architect',
   'AI/ML Engineer',
 ];
 
@@ -65,12 +66,9 @@ const App: React.FC = () => {
         .filter(s => s);
       let currentSection = '';
       for (const section of sections) {
-        if (section.offsetTop <= window.scrollY + 100) {
+        if (section.getBoundingClientRect().top <= 120) {
           currentSection = section.id;
         }
-      }
-      if (window.scrollY < (sections[0]?.offsetTop ?? 0) - 100) {
-        currentSection = '';
       }
       setActiveSection(currentSection);
     };
@@ -103,8 +101,17 @@ const App: React.FC = () => {
 
   const NavLink: React.FC<{ href: string; children: React.ReactNode }> = ({ href, children }) => {
     const isActive = activeSection === href.substring(1);
+
+    const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+      e.preventDefault();
+      const target = document.querySelector(href) as HTMLElement;
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    };
+
     return (
-      <a href={href} className="group flex items-center py-2">
+      <a href={href} onClick={handleClick} className="group flex items-center py-2">
         <span
           className={`nav-indicator mr-4 h-px transition-all duration-300 bg-slate-400 dark:bg-slate-600 group-hover:w-16 group-hover:bg-slate-700 dark:group-hover:bg-slate-200 ${
             isActive ? 'w-16 bg-slate-700 dark:bg-slate-200' : 'w-8'
@@ -141,7 +148,7 @@ const App: React.FC = () => {
 
   return (
     <div
-      className="min-h-screen bg-gray-50 dark:bg-slate-900 font-sans leading-relaxed text-slate-600 dark:text-slate-400 antialiased selection:bg-sky-300 selection:text-sky-900 transition-colors duration-300"
+      className="min-h-screen bg-[#FFE4C4] dark:bg-slate-900 font-sans leading-relaxed text-slate-600 dark:text-slate-400 antialiased selection:bg-sky-300 selection:text-sky-900 transition-colors duration-300"
       style={{
         background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, ${gradientColor}, transparent 80%)`,
       }}
@@ -253,6 +260,8 @@ const App: React.FC = () => {
             <Projects />
             <Experience />
             <Skills />
+            <Certifications />
+            <Publications />
             <Contact />
             <Footer />
           </main>

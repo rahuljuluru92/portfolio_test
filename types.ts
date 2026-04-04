@@ -49,6 +49,7 @@ export interface SkillCategory {
 export interface Certification {
   name: string;
   issuer: string;
+  url?: string;
 }
 
 export interface Publication {

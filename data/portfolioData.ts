@@ -26,7 +26,7 @@ export const educationData: Education[] = [
     institution: "CVR College of Engineering",
     location: "Hyderabad, India",
     period: "Aug 2020 – May 2024",
-    gpa: "9.35 / 10.0 — Distinction, Top 1%",
+    gpa: "9.35 / 10.0",
   },
 ];
 
@@ -197,10 +197,12 @@ export const certificationsData: Certification[] = [
   {
     name: "Oracle Cloud Infrastructure 2025 Certified Generative AI Professional",
     issuer: "Oracle",
+    url: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=0CEBCA7CF91AD1C7C7885DE8ECCC9623D318609E80900005D915DDDCE9383BC5",
   },
   {
     name: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
     issuer: "Oracle",
+    url: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=F22B9691B4DFF5636EC8B3FB2B19B386A30C98B1E7EC438B49AFF8D5B3D4E970",
   },
   {
     name: "Artificial Intelligence Foundation",
