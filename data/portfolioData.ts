@@ -32,7 +32,7 @@ export const educationData: Education[] = [
 
 export const experienceData: Experience[] = [
   {
-    role: "Software Engineer (GRA)",
+    role: "Software Engineer",
     company: "University of Oklahoma",
     location: "Norman, OK",
     period: "Aug 2024 – Present",
@@ -44,10 +44,10 @@ export const experienceData: Experience[] = [
     ],
   },
   {
-    role: "Software Engineering Intern",
+    role: "Software Engineering ",
     company: "NeoSpark Solutions",
     location: "Hyderabad, India",
-    period: "Jan 2024 – Jun 2024",
+    period: "Jun 2022 – Jun 2024",
     tags: ["Node.js", "React", "Express", "Redux", "REST APIs"],
     description: [
       "Shipped a self-serve internal reporting portal (Node.js / Express / React) using RESTful API design that replaced ad-hoc spreadsheet workflows across 5+ teams — reclaiming ~8 hrs/week of analyst time and eliminating a 2-day manual reporting cycle.",
@@ -56,10 +56,10 @@ export const experienceData: Experience[] = [
     ],
   },
   {
-    role: "Software Engineering Intern",
+    role: "Software Engineering ",
     company: "Salesforce",
     location: "Remote",
-    period: "Aug 2023 – Oct 2023",
+    
     tags: ["Apex", "Lightning Web Components", "SOQL", "REST APIs"],
     description: [
       "Engineered 12 Apex triggers and Flow automations to unify cross-object business logic across 3 Salesforce orgs — eliminating a class of manual data-reconciliation errors that caused ~30% of support escalations.",
