@@ -44,7 +44,7 @@ export const experienceData: Experience[] = [
     ],
   },
   {
-    role: "Software Engineering ",
+    role: "Software Engineer ",
     company: "NeoSpark Solutions",
     location: "Hyderabad, India",
     period: "Jun 2022 – Jun 2024",
@@ -56,10 +56,10 @@ export const experienceData: Experience[] = [
     ],
   },
   {
-    role: "Software Engineering ",
+    role: "Software Engineer ",
     company: "Salesforce",
     location: "Remote",
-    
+    period: "Jan 2022 – Jun 2022",
     tags: ["Apex", "Lightning Web Components", "SOQL", "REST APIs"],
     description: [
       "Engineered 12 Apex triggers and Flow automations to unify cross-object business logic across 3 Salesforce orgs — eliminating a class of manual data-reconciliation errors that caused ~30% of support escalations.",
