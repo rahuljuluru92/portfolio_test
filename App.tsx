@@ -146,12 +146,12 @@ const App: React.FC = () => {
               </h2>
 
               <p className="mt-4 max-w-md text-base leading-7 text-slate-600 dark:text-slate-400">
-                Backend engineer building production ML pipelines and distributed systems. Currently at the University of Oklahoma.
+                Software engineer with experience in backend, AI/ML, and distributed systems. Currently at the University of Oklahoma.
               </p>
 
               <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-teal-200/70 bg-teal-50/70 px-3 py-1.5 text-xs font-medium text-teal-700 dark:border-teal-800/60 dark:bg-teal-400/10 dark:text-teal-300">
                 <span className="h-2 w-2 rounded-full bg-teal-500"></span>
-                Open to full-time SWE / ML roles
+                Open to full-time SWE / AI/ML roles
               </div>
 
               <div className="mt-6">
