@@ -35,7 +35,7 @@ export const experienceData: Experience[] = [
     role: "Software Engineer",
     company: "University of Oklahoma",
     location: "Norman, OK",
-    period: "Aug 2024 – Present",
+    period: "Aug 2025 – Present",
     tags: ["Docker", "Kubernetes", "GCP", "Python", "CI/CD"],
     description: [
       "Containerized a 5-stage manual data preprocessing pipeline into GCP-deployed microservices using Docker and Kubernetes, eliminating 70% of manual effort and cutting average ingestion time from ~4 hrs to under 40 min for a 3-researcher team.",
